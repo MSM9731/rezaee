@@ -1,6 +1,3 @@
-</div>
-</div>
-
 <div id="lock_screen">
     <table>
         <tr>

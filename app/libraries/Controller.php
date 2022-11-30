@@ -10,7 +10,30 @@ class Controller
 
     public function view(string $view_name)
     {
-        if (!check_file_exist('/views/' . $view_name . '.php')) die('View doesn\'t exist');
+        if ($this->default_template) {
+            load(
+                '/views/inc/head.php',
+                '/views/inc/sidebar.php',
+                '/views/inc/navbar.php',
+            );
+        }
+
+        if (!check_file_exist('/views/' . $view_name . '.php')) $this->notfound();
         load('/views/' . $view_name . '.php');
+
+        if ($this->default_template) {
+            load('/views/inc/footer.php',);
+            echo '</div></div><!-- end of class="container body" -->';
+            load(
+                '/views/inc/lock_screen.php',
+                '/views/inc/scripts.php',
+            );
+            echo '</body></html>';
+        }
+    }
+
+    public function notfound()
+    {
+        $this->view('404.php');
     }
 }

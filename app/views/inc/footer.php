@@ -1,3 +1,6 @@
+</div>
+<!-- /page content -->
+
 <!-- footer content -->
 <footer class="hidden-print">
     <div class="pull-left">

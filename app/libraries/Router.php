@@ -27,7 +27,7 @@ class Router
     public function get_url()
     {
         $url = $_SERVER['REQUEST_URI'];
-        $url = substr($url, strlen(URLPATH));
+        $url = substr($url, strlen(ROOT));
         $url = trim($url, '/');
         preg_match('/(?P<controller>[a-zA-Z0-9]+)?(\/(?P<method>[a-zA-Z0-9]+)(\/(?P<params>.+))?)?/im', $url, $routs);
         $url = [];

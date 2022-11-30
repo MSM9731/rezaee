@@ -9,7 +9,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <img src="<?php echo URLPATH ?>/app/assets/images/img.jpg" alt="">مرتضی کریمی
+                        <img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="">مرتضی کریمی
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -33,7 +33,7 @@
                     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo URLPATH ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -45,7 +45,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo URLPATH ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -57,7 +57,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo URLPATH ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -69,7 +69,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo URLPATH ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -94,3 +94,6 @@
     </div>
 </div>
 <!-- /top navigation -->
+
+<!-- page content -->
+<div class="right_col" role="main">
