@@ -19,7 +19,8 @@ class Controller
         }
 
         if (!check_file_exist('/views/' . $view_name . '.php')) $this->notfound();
-        load('/views/' . $view_name . '.php');
+
+        load('/views/' . $view_name . '.php'); // load the requested view
 
         if ($this->default_template) {
             load('/views/inc/footer.php',);

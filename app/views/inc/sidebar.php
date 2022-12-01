@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col hidden-print">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i>
+            <a href="<?php echo ROOT ?>" class="site_title"><i class="fa fa-paw"></i>
                 <span>Gentelella Alela!</span>
             </a>
         </div>
@@ -11,7 +11,7 @@
         <!-- menu profile quick info -->
         <div class="profile clearfix">
             <div class="profile_pic">
-                <img src="<?php echo ROOT ?>/images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="icon" class="img-circle profile_img">
             </div>
             <div class="profile_info">
                 <span>خوش آمدید,</span>
@@ -40,6 +40,9 @@
             <!-- <a data-toggle="tooltip" data-placement="top" title="تنظیمات">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
             </a> -->
+            <a class="">
+                <span class="" aria-hidden="true"></span>
+            </a>
             <a data-toggle="tooltip" data-placement="top" title="تمام صفحه" onclick="toggleFullScreen();">
                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
             </a>

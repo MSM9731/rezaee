@@ -27,6 +27,26 @@
 
     <!-- Custom Theme Style -->
     <link href="<?php echo ROOT ?>/app/assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- My Style -->
+    <link href="<?php echo ROOT ?>/app/assets/css/style.css" rel="stylesheet">
+
+
+    <style>
+        .btn-group,
+        .dropdown-toggle,
+        .dropdown-menu {
+            width: 100%;
+        }
+
+        .dropdown-toggle {
+            text-align: start;
+        }
+
+        input[type='checkbox'] {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <!-- /head content -->
 

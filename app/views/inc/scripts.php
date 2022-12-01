@@ -41,6 +41,9 @@
 <script src="<?php echo ROOT ?>/app/assets/libs/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 <script src="<?php echo ROOT ?>/app/assets/libs/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
 
+<!-- Dropdown Handler Scripts -->
+<script src="<?php echo ROOT ?>/app/assets/js/dropdown-handler.js"></script>
+
 <!-- Custom Theme Scripts -->
 <script src="<?php echo ROOT ?>/app/assets/js/mycustom.min.js"></script>
 
