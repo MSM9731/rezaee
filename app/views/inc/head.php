@@ -25,6 +25,17 @@
     <!-- bootstrap-daterangepicker -->
     <link href="<?php echo ROOT ?>/app/assets/libs/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+
+    <!-- Load for pages/accessManagement -->
+    <!-- bootstrap-wysiwyg -->
+    <!-- <link href="../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet"> -->
+    <!-- Select2 -->
+    <!-- <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet"> -->
+    <!-- Switchery -->
+    <!-- <link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet"> -->
+    <!-- starrr -->
+    <!-- <link href="../vendors/starrr/dist/starrr.css" rel="stylesheet"> -->
+
     <!-- Custom Theme Style -->
     <link href="<?php echo ROOT ?>/app/assets/css/custom.min.css" rel="stylesheet">
 
@@ -45,6 +56,12 @@
 
         input[type='checkbox'] {
             cursor: pointer;
+        }
+
+        .tag {
+            background-color: #0d6efd !important;
+            /* padding-top: 0px !important;
+            padding-bottom: 0px !important; */
         }
     </style>
 </head>

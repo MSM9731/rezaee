@@ -13,9 +13,9 @@
 
 <!-- bootstrap-daterangepicker -->
 <script src="<?php echo ROOT ?>/app/assets/libs/moment/min/moment.min.js"></script>
-
 <script src="<?php echo ROOT ?>/app/assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
 
+<!-- Load for pages/dashboard -->
 <!-- Chart.js -->
 <script src="<?php echo ROOT ?>/app/assets/libs/Chart.js/dist/Chart.min.js"></script>
 <!-- jQuery Sparklines -->
@@ -41,8 +41,30 @@
 <script src="<?php echo ROOT ?>/app/assets/libs/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 <script src="<?php echo ROOT ?>/app/assets/libs/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
 
+
+<!-- Load for pages/accessManagement -->
+<!-- jQuery Tags Input -->
+<script src="<?php echo ROOT ?>/app/assets/libs/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+<!-- bootstrap-wysiwyg -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script> -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/jquery.hotkeys/jquery.hotkeys.js"></script> -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/google-code-prettify/src/prettify.js"></script> -->
+<!-- Switchery -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/switchery/dist/switchery.min.js"></script> -->
+<!-- Select2 -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/select2/dist/js/select2.full.min.js"></script> -->
+<!-- Parsley -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/parsleyjs/dist/parsley.min.js"></script> -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/parsleyjs/dist/i18n/fa.js"></script> -->
+<!-- Autosize -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/autosize/dist/autosize.min.js"></script> -->
+<!-- jQuery autocomplete -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script> -->
+<!-- starrr -->
+<!-- <script src="<?php echo ROOT ?>/app/assets/libs/starrr/dist/starrr.js"></script> -->
+
 <!-- Dropdown Handler Scripts -->
-<script src="<?php echo ROOT ?>/app/assets/js/dropdown-handler.js"></script>
+<!-- <script src="<?php echo ROOT ?>/app/assets/js/dropdown-handler.js"></script> -->
 
 <!-- Custom Theme Scripts -->
 <script src="<?php echo ROOT ?>/app/assets/js/mycustom.min.js"></script>

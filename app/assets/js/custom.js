@@ -107,7 +107,7 @@ function init_sidebar() {
     };
 
     $SIDEBAR_MENU.find('a').on('click', function (ev) {
-        console.log('clicked - sidebar_menu');
+
         var $li = $(this).parent();
 
         if ($li.is('.active')) {
@@ -136,7 +136,7 @@ function init_sidebar() {
 
 // toggle small or large menu
     $MENU_TOGGLE.on('click', function () {
-        console.log('clicked - menu toggle');
+
 
         if ($BODY.hasClass('nav-md')) {
             $SIDEBAR_MENU.find('li.active ul').hide();
@@ -376,7 +376,7 @@ function init_flot_chart() {
         return;
     }
 
-    console.log('init_flot_chart');
+
 
 
     var arr_data1 = [
@@ -581,14 +581,14 @@ function init_flot_chart() {
 
 
     if ($("#chart_plot_01").length) {
-        console.log('Plot1');
+
 
         $.plot($("#chart_plot_01"), [arr_data1, arr_data2], chart_plot_01_settings);
     }
 
 
     if ($("#chart_plot_02").length) {
-        console.log('Plot2');
+
 
         $.plot($("#chart_plot_02"),
             [{
@@ -605,7 +605,7 @@ function init_flot_chart() {
     }
 
     if ($("#chart_plot_03").length) {
-        console.log('Plot3');
+
 
 
         $.plot($("#chart_plot_03"), [{
@@ -632,7 +632,7 @@ function init_starrr() {
     if (typeof (starrr) === 'undefined') {
         return;
     }
-    console.log('init_starrr');
+
 
     $(".stars").starrr();
 
@@ -653,13 +653,13 @@ function init_starrr() {
 
 function init_JQVmap() {
 
-    //console.log('check init_JQVmap [' + typeof (VectorCanvas) + '][' + typeof (jQuery.fn.vectorMap) + ']' );
+
 
     if (typeof (jQuery.fn.vectorMap) === 'undefined') {
         return;
     }
 
-    console.log('init_JQVmap');
+
 
     if ($('#world-map-gdp').length) {
 
@@ -735,7 +735,7 @@ function init_skycons() {
     if (typeof (Skycons) === 'undefined') {
         return;
     }
-    console.log('init_skycons');
+
 
     var icons = new Skycons({
             "color": "#73879C"
@@ -761,7 +761,7 @@ function init_chart_doughnut() {
         return;
     }
 
-    console.log('init_chart_doughnut');
+
 
     if ($('.canvasDoughnut').length) {
 
@@ -817,9 +817,9 @@ function init_gauge() {
         return;
     }
 
-    console.log('init_gauge [' + $('.gauge-chart').length + ']');
 
-    console.log('init_gauge');
+
+
 
 
     var chart_gauge_settings = {
@@ -884,7 +884,7 @@ function init_sparklines() {
     if (typeof (jQuery.fn.sparkline) === 'undefined') {
         return;
     }
-    console.log('init_sparklines');
+
 
 
     $(".sparkline_one").sparkline([2, 4, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 4, 5, 6, 3, 5, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 5, 4, 3, 5, 6], {
@@ -1015,7 +1015,7 @@ function init_autocomplete() {
     if (typeof (autocomplete) === 'undefined') {
         return;
     }
-    console.log('init_autocomplete');
+
 
     var countries = {
         AD: "Andorra",
@@ -1318,7 +1318,7 @@ function init_parsley() {
     if (typeof (parsley) === 'undefined') {
         return;
     }
-    console.log('init_parsley');
+
 
     $/*.listen*/('parsley:field:validate', function () {
         validateFront();
@@ -1381,7 +1381,7 @@ function init_TagsInput() {
 
     if (typeof $.fn.tagsInput !== 'undefined') {
 
-        $('#tags_1').tagsInput({
+        $('.tag-control').tagsInput({
             width: 'auto'
         });
 
@@ -1396,7 +1396,7 @@ function init_select2() {
     if (typeof (select2) === 'undefined') {
         return;
     }
-    console.log('init_toolbox');
+
 
     $(".select2_single").select2({
         placeholder: "Select a state",
@@ -1418,7 +1418,7 @@ function init_wysiwyg() {
     if (typeof ($.fn.wysiwyg) === 'undefined') {
         return;
     }
-    console.log('init_wysiwyg');
+
 
     function init_ToolbarBootstrapBindings() {
         var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier',
@@ -1466,7 +1466,7 @@ function init_wysiwyg() {
         if (reason === 'unsupported-file-type') {
             msg = "Unsupported format " + detail;
         } else {
-            console.log("error uploading file", reason, detail);
+
         }
         $('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>' +
             '<strong>File upload error</strong> ' + msg + ' </div>').prependTo('#alerts');
@@ -1495,7 +1495,7 @@ function init_cropper() {
     if (typeof ($.fn.cropper) === 'undefined') {
         return;
     }
-    console.log('init_cropper');
+
 
     var $image = $('#image');
     var $download = $('#download');
@@ -1528,25 +1528,25 @@ function init_cropper() {
     // Cropper
     $image.on({
         'build.cropper': function (e) {
-            console.log(e.type);
+
         },
         'built.cropper': function (e) {
-            console.log(e.type);
+
         },
         'cropstart.cropper': function (e) {
-            console.log(e.type, e.action);
+
         },
         'cropmove.cropper': function (e) {
-            console.log(e.type, e.action);
+
         },
         'cropend.cropper': function (e) {
-            console.log(e.type, e.action);
+
         },
         'crop.cropper': function (e) {
-            console.log(e.type, e.x, e.y, e.width, e.height, e.rotate, e.scaleX, e.scaleY);
+
         },
         'zoom.cropper': function (e) {
-            console.log(e.type, e.ratio);
+
         }
     }).cropper(options);
 
@@ -1618,7 +1618,7 @@ function init_cropper() {
                     try {
                         data.option = JSON.parse($target.val());
                     } catch (e) {
-                        console.log(e.message);
+
                     }
                 }
             }
@@ -1649,7 +1649,7 @@ function init_cropper() {
                 try {
                     $target.val(JSON.stringify(result));
                 } catch (e) {
-                    console.log(e.message);
+
                 }
             }
 
@@ -1731,18 +1731,18 @@ function init_knob() {
     if (typeof ($.fn.knob) === 'undefined') {
         return;
     }
-    console.log('init_knob');
+
 
     $(".knob").knob({
         change: function (value) {
-            //console.log("change : " + value);
+
         },
         release: function (value) {
-            //console.log(this.$.attr('value'));
-            console.log("release : " + value);
+
+
         },
         cancel: function () {
-            console.log("cancel : ", this);
+
         },
         /*format : function (value) {
 				   return value + '%';
@@ -1839,7 +1839,7 @@ function init_InputMask() {
     if (typeof ($.fn.inputmask) === 'undefined') {
         return;
     }
-    console.log('init_InputMask');
+
 
     $(":input").inputmask();
 
@@ -1852,7 +1852,7 @@ function init_ColorPicker() {
     if (typeof ($.fn.colorpicker) === 'undefined') {
         return;
     }
-    console.log('init_ColorPicker');
+
 
     $('.demo1').colorpicker();
     $('.demo2').colorpicker();
@@ -1878,7 +1878,7 @@ function init_IonRangeSlider() {
     if (typeof ($.fn.ionRangeSlider) === 'undefined') {
         return;
     }
-    console.log('init_IonRangeSlider');
+
 
     $("#range_27").ionRangeSlider({
         type: "double",
@@ -1951,10 +1951,10 @@ function init_daterangepicker() {
     if (typeof ($.fn.daterangepicker) === 'undefined') {
         return;
     }
-    console.log('init_daterangepicker');
+
 
     var cb = function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
+
         $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
     };
 
@@ -2000,16 +2000,16 @@ function init_daterangepicker() {
     $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
     $('#reportrange').daterangepicker(optionSet1, cb);
     $('#reportrange').on('show.daterangepicker', function () {
-        console.log("show event fired");
+
     });
     $('#reportrange').on('hide.daterangepicker', function () {
-        console.log("hide event fired");
+
     });
     $('#reportrange').on('apply.daterangepicker', function (ev, picker) {
-        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+
     });
     $('#reportrange').on('cancel.daterangepicker', function (ev, picker) {
-        console.log("cancel event fired");
+
     });
     $('#options1').click(function () {
         $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
@@ -2028,10 +2028,10 @@ function init_daterangepicker_right() {
     if (typeof ($.fn.daterangepicker) === 'undefined') {
         return;
     }
-    console.log('init_daterangepicker_right');
+
 
     var cb = function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
+
         $('#reportrange_right span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
     };
 
@@ -2079,16 +2079,16 @@ function init_daterangepicker_right() {
     $('#reportrange_right').daterangepicker(optionSet1, cb);
 
     $('#reportrange_right').on('show.daterangepicker', function () {
-        console.log("show event fired");
+
     });
     $('#reportrange_right').on('hide.daterangepicker', function () {
-        console.log("hide event fired");
+
     });
     $('#reportrange_right').on('apply.daterangepicker', function (ev, picker) {
-        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+
     });
     $('#reportrange_right').on('cancel.daterangepicker', function (ev, picker) {
-        console.log("cancel event fired");
+
     });
 
     $('#options1').click(function () {
@@ -2110,31 +2110,31 @@ function init_daterangepicker_single_call() {
     if (typeof ($.fn.daterangepicker) === 'undefined') {
         return;
     }
-    console.log('init_daterangepicker_single_call');
+
 
     $('#single_cal1').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_1"
     }, function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
+
     });
     $('#single_cal2').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_2"
     }, function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
+
     });
     $('#single_cal3').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_3"
     }, function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
+
     });
     $('#single_cal4').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_4"
     }, function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
+
     });
 
 
@@ -2146,10 +2146,10 @@ function init_daterangepicker_reservation() {
     if (typeof ($.fn.daterangepicker) === 'undefined') {
         return;
     }
-    console.log('init_daterangepicker_reservation');
+
 
     $('#reservation').daterangepicker(null, function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
+
     });
 
     $('#reservation-time').daterangepicker({
@@ -2177,7 +2177,7 @@ function init_SmartWizard() {
     if (typeof ($.fn.smartWizard) === 'undefined') {
         return;
     }
-    console.log('init_SmartWizard');
+
     $('#wizard').smartWizard({
         labelNext: 'بعدی', // label for Next button
         labelPrevious: 'قبلی', // label for Previous button
@@ -2205,7 +2205,7 @@ function init_validator() {
     if (typeof (validator) === 'undefined') {
         return;
     }
-    console.log('init_validator');
+
 
     // initialize the validator function
     validator.message.invalid = 'ورودی مورد انتظار نیست';
@@ -2261,7 +2261,7 @@ function init_PNotify() {
     if (typeof (PNotify) === 'undefined') {
         return;
     }
-    console.log('init_PNotify');
+
 
     new PNotify({
         title: "PNotify",
@@ -2292,7 +2292,7 @@ function init_PNotify() {
 
 function init_CustomNotification() {
 
-    console.log('run_customtabs');
+
     CustomTabs = function (options) {
         $('.tabbed_notifications > div').hide();
         $('.tabbed_notifications > div:first-of-type').show();
@@ -2312,7 +2312,7 @@ function init_CustomNotification() {
     if (typeof (CustomTabs) === 'undefined') {
         return;
     }
-    console.log('init_CustomTabs');
+
 
     var cnt = 10;
 
@@ -2352,7 +2352,7 @@ function init_EasyPieChart() {
     if (typeof ($.fn.easyPieChart) === 'undefined') {
         return;
     }
-    console.log('init_EasyPieChart');
+
 
     $('.chart').easyPieChart({
         easing: 'easeOutElastic',
@@ -2409,13 +2409,13 @@ function init_EasyPieChart() {
 
 function init_charts() {
 
-    console.log('run_charts  typeof [' + typeof (Chart) + ']');
+
 
     if (typeof (Chart) === 'undefined') {
         return;
     }
 
-    console.log('init_charts');
+
 
 
     Chart.defaults.global.legend = {
@@ -2818,7 +2818,7 @@ function init_compose() {
     if (typeof ($.fn.slideToggle) === 'undefined') {
         return;
     }
-    console.log('init_compose');
+
 
     $('#compose, .compose-close').click(function () {
         $('.compose').slideToggle();
@@ -2833,7 +2833,7 @@ function init_calendar() {
     if (typeof ($.fn.fullCalendar) === 'undefined') {
         return;
     }
-    console.log('init_calendar');
+
     var date = new Date(),
         d = date.getDate(),
         m = date.getMonth(),
@@ -2936,12 +2936,12 @@ function init_calendar() {
 
 function init_DataTables() {
 
-    console.log('run_datatables');
+
 
     if (typeof ($.fn.DataTable) === 'undefined') {
         return;
     }
-    console.log('init_DataTables');
+
 
     var handleDataTableButtons = function () {
         if ($("#datatable-buttons").length) {
@@ -3056,7 +3056,7 @@ function init_morris_charts() {
     if (typeof (Morris) === 'undefined') {
         return;
     }
-    console.log('init_morris_charts');
+
 
     if ($('#graph_bar').length) {
 
@@ -3132,7 +3132,7 @@ function init_morris_charts() {
             labels: ['Y', 'Z', 'A'],
             resize: true
         }).on('click', function (i, row) {
-            console.log(i, row);
+
         });
 
     }
@@ -3219,7 +3219,7 @@ function init_echarts() {
     if (typeof (echarts) === 'undefined') {
         return;
     }
-    console.log('init_echarts');
+
 
 
     var theme = {

@@ -37,11 +37,8 @@
 
         <!-- /menu footer buttons -->
         <div class="sidebar-footer hidden-small">
-            <!-- <a data-toggle="tooltip" data-placement="top" title="تنظیمات">
+            <a data-toggle="tooltip" data-placement="top" title="تنظیمات">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-            </a> -->
-            <a class="">
-                <span class="" aria-hidden="true"></span>
             </a>
             <a data-toggle="tooltip" data-placement="top" title="تمام صفحه" onclick="toggleFullScreen();">
                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>

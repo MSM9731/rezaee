@@ -15,23 +15,23 @@ window.addEventListener('load', function () {
         checkboxs.forEach(function (checkbox) {
             checkbox.addEventListener('change', function (e) {
                 if (this.value === 'forbidden') {
-                    forbidden = this.checked;
                     all = false;
+                    forbidden = this.checked;
                 } else if (this.value === 'all') {
                     all = this.checked;
                     forbidden = false;
-                    // console.log(forbidden);
                 } else { }
                 // console.log('all: ', all, ' ; forbidden: ', forbidden);
                 checkboxs.forEach(function (checkbox) {
                     if (forbidden) {
                         formSelect.innerHTML = 'بدون دسترسی';
-                        checkbox.disabled = forbidden && checkbox.value !== 'forbidden';
+                        checkbox.disabled = checkbox.value !== 'forbidden';
                     } else if (all) {
                         formSelect.innerHTML = 'دسترسی کامل';
-                        checkbox.checked = all && checkbox.value !== 'forbidden';
+                        checkbox.checked = checkbox.value !== 'forbidden';
                     } else {
                         checkbox.disabled = false;
+                        formSelect.innerHTML = formSelectText;
                     }
                 });
             });
