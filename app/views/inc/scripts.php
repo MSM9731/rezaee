@@ -64,7 +64,7 @@
 <!-- <script src="<?php echo ROOT ?>/app/assets/libs/starrr/dist/starrr.js"></script> -->
 
 <!-- Dropdown Handler Scripts -->
-<!-- <script src="<?php echo ROOT ?>/app/assets/js/dropdown-handler.js"></script> -->
+<script src="<?php echo ROOT ?>/app/assets/js/dropdown-handler.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="<?php echo ROOT ?>/app/assets/js/mycustom.min.js"></script>

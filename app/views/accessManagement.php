@@ -29,15 +29,6 @@
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">تنظیمات 1</a>
-                            </li>
-                            <li><a href="#">تنظیمات 2</a>
-                            </li>
-                        </ul>
-                    </li>
                     <!-- <li><a class="close-link"><i class="fa fa-close"></i></a></li> -->
                 </ul>
                 <div class="clearfix"></div>
@@ -138,13 +129,13 @@
                                                 </td> -->
                                             </tr>
                                             <tr>
-                                                <th scope="row">مشاهده</th>
-                                                <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                <th class="col-2" scope="row">مشاهده</th>
+                                                <td class="col-5" style="max-width: 100px;">
+                                                    <div class="position-relative checklist">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle ovelflow-scroll" type="button" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
-                                                        <ul role="menu" class="dropdown-menu p-3">
+                                                        <ul role="menu" class="dropdown-menu p-3" style="max-height: 300px;overflow-y: scroll;">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
@@ -152,24 +143,19 @@
                                                                     </label>
                                                                 </div>
                                                             </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
-                                                                    </label>
-                                                                </div>
-                                                            </li>
+                                                            <?php foreach ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30] as $value) : ?>
+                                                                <li>
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم <?php echo $value ?>
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            <?php endforeach; ?>
                                                         </ul>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <td class="col-5">
                                                     <div class="btn-group checklist">
                                                         <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
                                                             انتخاب <span class="caret"></span>
