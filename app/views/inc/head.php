@@ -60,8 +60,15 @@
 
         .tag {
             background-color: #0d6efd !important;
-            /* padding-top: 0px !important;
-            padding-bottom: 0px !important; */
+        }
+
+        .tag::after {
+            content: none;
+            display: none;
+        }
+
+        .form-select {
+            white-space: normal;
         }
     </style>
 </head>

@@ -54,11 +54,10 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">ایجاد</th>
-                                                <td>
+                                                <!-- <td>
                                                     <div class="">
                                                         <div class="control-group">
                                                             <input list="user_team" type="text" class="tag-control tags form-control" value="اجتماعی, تبلیغات, فروش">
-                                                            <!-- <input list="user_team" type="text"> -->
                                                         </div>
                                                     </div>
                                                 </td>
@@ -66,7 +65,7 @@
                                                     <div class="control-group">
                                                         <input type="text" class="tag-control tags form-control" value="اجتماعی, تبلیغات, فروش">
                                                     </div>
-                                                </td>
+                                                </td> -->
                                                 <!-- <td>
                                                     <div class="btn-group checklist">
                                                         <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
@@ -131,19 +130,33 @@
                                             <tr>
                                                 <th class="col-2" scope="row">مشاهده</th>
                                                 <td class="col-5" style="max-width: 100px;">
-                                                    <div class="position-relative checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle ovelflow-scroll" type="button" aria-expanded="false">
+                                                    <div class="checklist" style="position: relative;">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
                                                             بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3" style="max-height: 300px;overflow-y: scroll;">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" value="all"> دسترسی کامل
                                                                     </label>
                                                                 </div>
                                                             </li>
-                                                            <?php foreach ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30] as $value) : ?>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li> -->
+                                                            <?php foreach ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30] as $value) : ?>
                                                                 <li>
                                                                     <div class="checkbox">
                                                                         <label>
