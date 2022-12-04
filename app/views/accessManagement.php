@@ -1396,6 +1396,11 @@
                 data: formdata,
                 success: function(res) {
                     console.log(res);
+                    swal({
+                        text: 'دسترسی با موفقیت اضافه شد!',
+                        icon: 'success',
+                        button: 'باشه',
+                    })
                 },
                 fail: function(res) {
                     // console.log(res);

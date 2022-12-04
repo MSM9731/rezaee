@@ -63,11 +63,14 @@
 <!-- starrr -->
 <!-- <script src="<?php echo ROOT ?>/app/assets/libs/starrr/dist/starrr.js"></script> -->
 
+<!-- Dropdown Handler Scripts -->
+<script src="<?php echo ROOT ?>/app/assets/js/dropdown-handler.js"></script>
+
 <!-- xhr Scripts -->
 <script src="<?php echo ROOT ?>/assets/libs/xhr/xhr.js"></script>
 
-<!-- Dropdown Handler Scripts -->
-<script src="<?php echo ROOT ?>/app/assets/js/dropdown-handler.js"></script>
+<!-- xhr Scripts -->
+<script src="<?php echo ROOT ?>/node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="<?php echo ROOT ?>/app/assets/js/mycustom.min.js"></script>
