@@ -50,6 +50,11 @@
             width: 100%;
         }
 
+        .dropdown-menu{
+            max-height: 300px;
+            overflow-y: scroll;
+        }
+
         .dropdown-toggle {
             text-align: start;
         }
@@ -69,6 +74,10 @@
 
         .form-select {
             white-space: normal;
+        }
+
+        .position-relative{
+            position: relative;
         }
     </style>
 </head>
