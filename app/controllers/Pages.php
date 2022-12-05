@@ -24,19 +24,17 @@ class Pages extends Controller
 
     protected function load_view(string $view_name)
     {
-        return;
+        // return;
         load(
             '/views/pages/inc/head.php',
-            '/views/pages/inc/sidebar.php',
-            '/views/pages/inc/navbar.php',
+            '/views/pages/inc/header.php',
         );
 
         $this->view('pages/' . $view_name);
 
-        load('/views/pages/inc/footer.php',);
-        echo '</div></div><!-- end of class="container body" -->';
         load(
-            '/views/pages/inc/lock_screen.php',
+            '/views/pages/inc/footer.php',
+            '/views/pages/inc/scroll_top.php',
             '/views/pages/inc/scripts.php',
         );
         echo '</body></html>';

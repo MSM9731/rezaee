@@ -9,10 +9,10 @@
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/slider/Woo_Package_New_Bnr1.png" class="d-block w-100 rounded" alt="">
+                                <img src="<?php echo ROOT ?>/app/assets/pages/img/slider/Woo_Package_New_Bnr1.png" class="d-block w-100 rounded" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/slider/Woo_Package_New_Bnr2.png" class="d-block w-100 rounded" alt="">
+                                <img src="<?php echo ROOT ?>/app/assets/pages/img/slider/Woo_Package_New_Bnr2.png" class="d-block w-100 rounded" alt="">
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
             <div class="col-md-4 top-slider">
                 <div class="slider-item bg-white rounded p-4">
                     <figure class="position-relative">
-                        <img src="img/blog/youtube.jpg" alt="" class="w-100 rounded">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/youtube.jpg" alt="" class="w-100 rounded">
                         <figcaption class="tp_top position-absolute p-4">
                             <span>20 مرداد</span>
                         </figcaption>
@@ -82,7 +82,7 @@
                 <div class="top-slider owl-carousel owl-theme top-slider-wrap">
                     <div class="slider-item bg-white rounded p-4">
                         <figure class="position-relative">
-                            <img src="img/blog/youtube.jpg" alt="" class="w-100 rounded">
+                            <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/youtube.jpg" alt="" class="w-100 rounded">
                             <figcaption class="tp_top position-absolute p-4">
                                 <span>20 مرداد</span>
                             </figcaption>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="slider-item bg-white rounded p-4">
                         <figure class="position-relative">
-                            <img src="img/blog/ecom.jpg" alt="" class="w-100 rounded">
+                            <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/ecom.jpg" alt="" class="w-100 rounded">
                             <figcaption class="tp_top position-absolute p-4">
                                 <span>20 مرداد</span>
                             </figcaption>
@@ -122,7 +122,7 @@
                     </div>
                     <div class="slider-item bg-white rounded p-4">
                         <figure class="position-relative">
-                            <img src="img/blog/podcast.jpg" alt="" class="w-100 rounded">
+                            <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/podcast.jpg" alt="" class="w-100 rounded">
                             <figcaption class="tp_top position-absolute p-4">
                                 <span>20 مرداد</span>
                             </figcaption>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="slider-item bg-white rounded p-4">
                         <figure class="position-relative">
-                            <img src="img/blog/btstrap.jpg" alt="" class="w-100 rounded">
+                            <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/btstrap.jpg" alt="" class="w-100 rounded">
                             <figcaption class="tp_top position-absolute p-4">
                                 <span>20 مرداد</span>
                             </figcaption>
@@ -162,7 +162,7 @@
                     </div>
                     <div class="slider-item bg-white rounded p-4">
                         <figure class="position-relative">
-                            <img src="img/blog/buisiness.jpg" alt="" class="w-100 rounded">
+                            <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/buisiness.jpg" alt="" class="w-100 rounded">
                             <figcaption class="tp_top position-absolute p-4">
                                 <span>20 مرداد</span>
                             </figcaption>
@@ -197,7 +197,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/CSS-Contact-Us-Form.png" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/CSS-Contact-Us-Form.png" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -216,7 +216,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/podcast.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/podcast.jpg" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -235,7 +235,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/buisiness.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/buisiness.jpg" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -254,7 +254,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/cook.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/cook.jpg" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -273,7 +273,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/Piks.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/Piks.jpg" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -292,7 +292,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/shop.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/shop.jpg" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -326,7 +326,7 @@
                         <a href="#">
                             <div class="slider-item index-item-p">
                                 <figure class="position-relative">
-                                    <img src="img/blog/CSS-Contact-Us-Form.png" alt="" class="w-100">
+                                    <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/CSS-Contact-Us-Form.png" alt="" class="w-100">
                                     <figcaption class="tp_top position-absolute p-4">
                                         <span>20 مرداد</span>
                                     </figcaption>
@@ -341,7 +341,7 @@
                     <a href="#">
                         <div class="slider-item index-item-p">
                             <figure class="position-relative">
-                                <img src="img/blog/shop.jpg" alt="" class="w-100">
+                                <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/shop.jpg" alt="" class="w-100">
                                 <figcaption class="tp_top position-absolute p-4">
                                     <span>20 مرداد</span>
                                 </figcaption>
@@ -356,7 +356,7 @@
                 <a href="#">
                     <div class="slider-item index-item-p">
                         <figure class="position-relative">
-                            <img src="img/blog/btstrap.jpg" alt="" class="w-100">
+                            <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/btstrap.jpg" alt="" class="w-100">
                             <figcaption class="tp_top position-absolute p-4">
                                 <span>20 مرداد</span>
                             </figcaption>
@@ -371,7 +371,7 @@
             <a href="#">
                 <div class="slider-item index-item-p">
                     <figure class="position-relative">
-                        <img src="img/blog/buisiness.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/buisiness.jpg" alt="" class="w-100">
                         <figcaption class="tp_top position-absolute p-4">
                             <span>20 مرداد</span>
                         </figcaption>
@@ -390,7 +390,7 @@
                 <a href="#">
                     <div class="slider-item index-item-p">
                         <figure class="position-relative">
-                            <img src="img/blog/youtube.jpg" alt="" class="w-100">
+                            <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/youtube.jpg" alt="" class="w-100">
                             <figcaption class="tp_top position-absolute p-4">
                                 <span>20 مرداد</span>
                             </figcaption>
@@ -405,7 +405,7 @@
             <a href="#">
                 <div class="slider-item index-item-p">
                     <figure class="position-relative">
-                        <img src="img/blog/cook.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/cook.jpg" alt="" class="w-100">
                         <figcaption class="tp_top position-absolute p-4">
                             <span>20 مرداد</span>
                         </figcaption>
@@ -433,7 +433,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/CSS-Contact-Us-Form.png" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/CSS-Contact-Us-Form.png" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -452,7 +452,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/buisiness.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/buisiness.jpg" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">
@@ -471,7 +471,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4 my-3">
                 <div class="blg-wrap bg-white pb-3">
                     <figure class="position-relative">
-                        <img src="img/blog/Piks.jpg" alt="" class="w-100">
+                        <img src="<?php echo ROOT ?>/app/assets/pages/img/blog/Piks.jpg" alt="" class="w-100">
                         <figcaption class="position-absolute w-100 h-100"><span class="blg-dt">4 مرداد</span></figcaption>
                     </figure class="position-relative">
                     <div class="px-3 py-1 text-start">

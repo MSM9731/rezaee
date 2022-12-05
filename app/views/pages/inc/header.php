@@ -14,7 +14,10 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">خانه</a>
+                                        <a class="nav-link active" aria-current="page" href="<?php echo ROOT ?>/">خانه</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="<?php echo ROOT ?>/users/login">ورود</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">مقالات</a>
