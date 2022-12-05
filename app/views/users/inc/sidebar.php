@@ -1,9 +1,12 @@
 <div class="col-md-3 left_col hidden-print">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
-            <a href="<?php echo ROOT ?>" class="site_title"><i class="fa fa-paw"></i>
+            <!-- <a href="<?php echo ROOT ?>" class="site_title"><i class="fa fa-paw"></i>
                 <span>Gentelella Alela!</span>
-            </a>
+            </a> -->
+            <span class="site_title"><i class="fa fa-paw"></i>
+                <span>نام سایت</span>
+            </span>
         </div>
 
         <div class="clearfix"></div>
@@ -25,11 +28,11 @@
         <!-- sidebar menu -->
         <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
-                <h3>عمومی</h3>
+                <!-- <h3>عمومی</h3> -->
                 <ul class="nav side-menu">
-                    <li><a href="<?php echo ROOT ?>/"><i class="fa fa-home"></i> خانه </a></li>
-                    <li><a href="<?php echo ROOT ?>/pages/accessManagement"><i class="fa fa-sitemap"></i> مدیریت دسترسی </a></li>
-                    <li><a href="<?php echo ROOT ?>/template.html"><i class="fa fa-sitemap"></i> صفحه نمونه</a></li>
+                    <li><a href="<?php echo ROOT ?>/users"><i class="fa fa-home"></i> داشبورد </a></li>
+                    <li><a href="<?php echo ROOT ?>/users/accessManagement"><i class="fa fa-sitemap"></i> مدیریت دسترسی </a></li>
+                    <!-- <li><a href="<?php echo ROOT ?>/template.html"><i class="fa fa-sitemap"></i> صفحه نمونه</a></li> -->
                 </ul>
             </div>
         </div>

@@ -11,7 +11,7 @@ class Router
         $url = $this->get_url();
 
         // controller
-        if (isset($url['controller']) && check_file_exist('/contollers/' . $url['controller'] . '.php')) $this->current_controller = $url['controller'];
+        if (isset($url['controller']) && check_file_exist('/controllers/' . $url['controller'] . '.php')) $this->current_controller = $url['controller'];
         load('/controllers/' . $this->current_controller . '.php');
         $this->current_controller = new $this->current_controller;
 

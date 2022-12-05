@@ -1367,7 +1367,7 @@
                     </div>
                     <!-- end of accordion -->
                     <p>
-                        <button type="submit" class="btn btn-success">ارسال</button>
+                        <button type="submit" class="btn btn-success" accesskey="s">ارسال (<small>Alt + s</small>)</button>
                     </p>
                 </div>
             </form>
@@ -1395,15 +1395,38 @@
                 Async: false,
                 data: formdata,
                 success: function(res) {
-                    console.log(res);
+                    // console.log(res);
+                    let
+                        icon = 'success', // success | error | warning | info
+                        text = 'دسترسی با موفقیت اضافه شد!'
+                    try {
+                        res = JSON.parse(res);
+                        switch (res.status) {
+                            case 'success':
+                                icon = 'success'
+                                break;
+                            case 'error':
+                                icon = 'error'
+                                break;
+                            case 'info':
+                                icon = 'info'
+                                break;
+                            default:
+                                break;
+                        }
+                    } catch (error) {
+                        console.log(error);
+                        icon = 'error'
+                        text = 'خطا حین انجام عملیات'
+                    }
                     swal({
-                        text: 'دسترسی با موفقیت اضافه شد!',
-                        icon: 'success',
+                        text: text,
+                        icon: icon,
                         button: 'باشه',
                     })
                 },
                 fail: function(res) {
-                    // console.log(res);
+                    console.log(res);
                 }
             });
         });

@@ -1,6 +1,6 @@
 <?php
 
-class Pages extends Controller
+class Users extends Controller
 {
     public function index($data = null)
     {
@@ -8,7 +8,7 @@ class Pages extends Controller
     }
 
     public function dashboard()
-    {
+    {   
         $this->load_view('dashboard');
     }
 
@@ -24,20 +24,19 @@ class Pages extends Controller
 
     protected function load_view(string $view_name)
     {
-        return;
         load(
-            '/views/pages/inc/head.php',
-            '/views/pages/inc/sidebar.php',
-            '/views/pages/inc/navbar.php',
+            '/views/users/inc/head.php',
+            '/views/users/inc/sidebar.php',
+            '/views/users/inc/navbar.php',
         );
 
-        $this->view('pages/' . $view_name);
+        $this->view('users/' . $view_name);
 
-        load('/views/pages/inc/footer.php',);
+        load('/views/users/inc/footer.php',);
         echo '</div></div><!-- end of class="container body" -->';
         load(
-            '/views/pages/inc/lock_screen.php',
-            '/views/pages/inc/scripts.php',
+            '/views/users/inc/lock_screen.php',
+            '/views/users/inc/scripts.php',
         );
         echo '</body></html>';
     }

@@ -1,4 +1,4 @@
 <?php
 
 // die('hello');
-print_r($_POST);
+print_r(json_encode($_POST));
