@@ -4,12 +4,12 @@ class Pages extends Controller
 {
     public function index($data = null)
     {
-        $this->dashboard();
+        $this->home();
     }
 
-    public function dashboard()
+    public function home()
     {
-        $this->load_view('dashboard');
+        $this->load_view('home');
     }
 
     public function accessManagement()
