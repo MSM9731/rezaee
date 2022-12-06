@@ -7,9 +7,9 @@
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="">
+                <!-- <li class="">
                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="">مرتضی کریمی
+                        <img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="">مرتضی کریمی
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -23,9 +23,11 @@
                         <li><a href="javascript:;">کمک</a></li>
                         <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> خروج</a></li>
                     </ul>
-                </li>
+                </li> -->
 
-                <li role="presentation" class="dropdown">
+                <li><a href="<?php echo ROOT ?>/"><small>مشاهده سایت</small></a></li>
+
+                <!-- <li role="presentation" class="dropdown">
                     <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                         <i class="fa fa-envelope-o"></i>
                         <span class="badge bg-green">6</span>
@@ -33,7 +35,7 @@
                     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -45,7 +47,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -57,7 +59,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -69,7 +71,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -88,7 +90,7 @@
                             </div>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </div>

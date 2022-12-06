@@ -37,11 +37,12 @@
                 <div class="x_content">
                     <!-- start accordion -->
                     <div class="accordion" id="accordion1" role="tablist" aria-multiselectable="true">
+                        <!-- start user access -->
                         <div class="panel">
-                            <a class="panel-heading" role="tab" id="headingOne1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <a class="panel-heading" role="tab" id="headingOne1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
                                 <h4 class="panel-title">کاربران</h4>
                             </a>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <table class="table">
                                         <thead>
@@ -55,130 +56,157 @@
                                             <tr>
                                                 <th scope="row">ایجاد</th>
                                                 <td>
-                                                    <div class="">
-                                                        <div class="control-group">
-                                                            <input list="user_team" type="text" class="tag-control tags form-control" value="اجتماعی, تبلیغات, فروش">
-                                                            <!-- <input list="user_team" type="text"> -->
-                                                        </div>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
+                                                        </button>
+                                                        <ul role="menu" class="dropdown-menu p-3">
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="userAccess_create_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li> -->
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat2"> تیم 2
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="control-group">
-                                                        <input type="text" class="tag-control tags form-control" value="اجتماعی, تبلیغات, فروش">
-                                                    </div>
-                                                </td>
-                                                <!-- <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
-                                                        </button>
-                                                        <ul role="menu" class="dropdown-menu p-3">
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td> -->
-                                                <!-- <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
-                                                        </button>
-                                                        <ul role="menu" class="dropdown-menu p-3">
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </td> -->
-                                            </tr>
-                                            <tr>
-                                                <th class="col-2" scope="row">مشاهده</th>
-                                                <td class="col-5" style="max-width: 100px;">
-                                                    <div class="position-relative checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle ovelflow-scroll" type="button" aria-expanded="false">
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
                                                             بدون دسترسی <span class="caret"></span>
                                                         </button>
-                                                        <ul role="menu" class="dropdown-menu p-3" style="max-height: 300px;overflow-y: scroll;">
+                                                        <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="userAccess_create_category" value="all"> دسترسی کامل
                                                                     </label>
                                                                 </div>
                                                             </li>
-                                                            <?php foreach ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30] as $value) : ?>
-                                                                <li>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم <?php echo $value ?>
-                                                                        </label>
-                                                                    </div>
-                                                                </li>
-                                                            <?php endforeach; ?>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li> -->
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="userAccess_create_category[]" value="cat1"> تیم 1
+                                                                    </label>
+                                                                </div>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </td>
-                                                <td class="col-5">
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">مشاهده</th>
+                                                <td>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="userAccess_read_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li> -->
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="userAccess_read_team[]" value="cat1"> تیم 1
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
+                                                        </button>
+                                                        <ul role="menu" class="dropdown-menu p-3">
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="userAccess_read_category" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
+                                                                    </label>
+                                                                </div>
+                                                            </li> -->
+                                                            <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="userAccess_read_category[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -189,29 +217,36 @@
                                             <tr>
                                                 <th scope="row">ویرایش</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="userAccess_update_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="userAccess_update_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -219,29 +254,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="userAccess_update_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="userAccess_update_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -252,29 +294,36 @@
                                             <tr>
                                                 <th scope="row">حذف</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="userAccess_delete_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="userAccess_delete_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -282,29 +331,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="userAccess_delete_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="userAccess_delete_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -313,38 +369,12 @@
                                                 </td>
                                             </tr>
                                         </tbody>
-                                        <datalist id="user_team">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                        </datalist>
-                                        <datalist id="user_category">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                        </datalist>
                                     </table>
                                 </div>
                             </div>
                         </div>
+                        <!-- end user access -->
+                        <!-- start news access -->
                         <div class="panel">
                             <a class="panel-heading collapsed" role="tab" id="headingTwo1" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
                                 <h4 class="panel-title">اخبار</h4>
@@ -363,29 +393,36 @@
                                             <tr>
                                                 <th scope="row">ایجاد</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_create_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_create_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -393,29 +430,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_create_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_create_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -426,29 +470,36 @@
                                             <tr>
                                                 <th scope="row">مشاهده</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_read_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_read_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -456,29 +507,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_read_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_read_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -489,29 +547,36 @@
                                             <tr>
                                                 <th scope="row">ویرایش</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_update_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_update_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -519,29 +584,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_update_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_update_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -552,29 +624,36 @@
                                             <tr>
                                                 <th scope="row">حذف</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_delete_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_delete_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -582,29 +661,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="newsAccess_delete_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="newsAccess_delete_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -617,6 +703,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end news access -->
+                        <!-- start ruls access -->
                         <div class="panel">
                             <a class="panel-heading collapsed" role="tab" id="headingThree1" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree">
                                 <h4 class="panel-title">نقش</h4>
@@ -635,29 +723,36 @@
                                             <tr>
                                                 <th scope="row">ایجاد</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_create_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_create_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -665,29 +760,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_create_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_create_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -698,29 +800,36 @@
                                             <tr>
                                                 <th scope="row">مشاهده</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_read_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_read_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -728,29 +837,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_read_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_read_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -761,29 +877,36 @@
                                             <tr>
                                                 <th scope="row">ویرایش</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_update_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_update_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -791,29 +914,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_update_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_update_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -824,29 +954,36 @@
                                             <tr>
                                                 <th scope="row">حذف</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_delete_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_delete_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -854,29 +991,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="ruleAccess_delete_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="ruleAccess_delete_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -889,6 +1033,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end ruls access -->
+                        <!-- start categories access -->
                         <div class="panel">
                             <a class="panel-heading collapsed" role="tab" id="headingThree1" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                                 <h4 class="panel-title">دسته بندی</h4>
@@ -907,29 +1053,36 @@
                                             <tr>
                                                 <th scope="row">ایجاد</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_create_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_create_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -937,29 +1090,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_create_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_create_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -970,29 +1130,36 @@
                                             <tr>
                                                 <th scope="row">مشاهده</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_read_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_read_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -1000,29 +1167,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_read_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_read_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -1033,29 +1207,36 @@
                                             <tr>
                                                 <th scope="row">ویرایش</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_update_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_update_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -1063,29 +1244,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_update_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_update_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -1096,29 +1284,36 @@
                                             <tr>
                                                 <th scope="row">حذف</th>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_delete_team" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_delete_team[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -1126,29 +1321,36 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <div class="btn-group checklist">
-                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle" type="button" aria-expanded="false">
-                                                            انتخاب <span class="caret"></span>
+                                                    <div class="checklist position-relative">
+                                                        <button data-toggle="dropdown" class="form-select btn btn-default dropdown-toggle m-0" aria-expanded="false">
+                                                            بدون دسترسی <span class="caret"></span>
                                                         </button>
                                                         <ul role="menu" class="dropdown-menu p-3">
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" class="" value="all"> دسترسی کامل
+                                                                        <input type="checkbox" name="categoryAccess_delete_categroy" value="all"> دسترسی کامل
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <!-- <li>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="select_all"> انتخاب همه
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" value="forbidden"> بدون دسنرسی
+                                                                        <input type="checkbox" value="unselect_all"> عدم انتخاب همه
                                                                     </label>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <li>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" name="userAccess_create_team[]" value="cat1"> تیم 1
+                                                                        <input type="checkbox" name="categoryAccess_delete_categroy[]" value="cat1"> تیم 1
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -1161,15 +1363,11 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end categories access -->
                     </div>
                     <!-- end of accordion -->
                     <p>
-                        <button type="submit" class="btn btn-success">ارسال</button>
-                    </p>
-                    <p>
-                    <div class="control-group">
-                        <input type="text" class="tag-control tags form-control" value="اجتماعی, تبلیغات, فروش">
-                    </div>
+                        <button type="submit" class="btn btn-success" accesskey="s">ارسال (<small>Alt + s</small>)</button>
                     </p>
                 </div>
             </form>
@@ -1181,29 +1379,56 @@
 
 <script>
     window.addEventListener("load", function() {
-        let
-            data = [], // the form data in type array
-            formdata; // the form data in type FormData
-
         // submit controller
         const addUserForm = document.getElementById('addUserForm');
         addUserForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            let
+                data = [], // the form data in type array
+                formdata; // the form data in type FormData
             formdata = new FormData(this);
+            // console.log(formdata);
 
-            for (const record of formdata) {
-                data.push(record);
-            }
-
-            // begin test
-            // let xhr = new XMLHttpRequest();
-            // xhr.onload = function() {
-            //   // console.log(this.response);
-            // }
-            // xhr.open('post', 'api.php', false);
-            // xhr.send(formdata);
-            // console.log(data);
-            // end test
+            xhr({
+                url: '../api/accessManagement.php',
+                method: 'post',
+                Async: false,
+                data: formdata,
+                success: function(res) {
+                    // console.log(res);
+                    let
+                        icon = 'success', // success | error | warning | info
+                        text = 'دسترسی با موفقیت اضافه شد!'
+                    try {
+                        res = JSON.parse(res);
+                        switch (res.status) {
+                            case 'success':
+                                icon = 'success'
+                                break;
+                            case 'error':
+                                icon = 'error'
+                                break;
+                            case 'info':
+                                icon = 'info'
+                                break;
+                            default:
+                                break;
+                        }
+                    } catch (error) {
+                        console.log(error);
+                        icon = 'error'
+                        text = 'خطا حین انجام عملیات'
+                    }
+                    swal({
+                        text: text,
+                        icon: icon,
+                        button: 'باشه',
+                    })
+                },
+                fail: function(res) {
+                    console.log(res);
+                }
+            });
         });
     });
 </script>
