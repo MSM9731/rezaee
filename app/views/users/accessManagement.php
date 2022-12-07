@@ -1383,52 +1383,8 @@
         const addUserForm = document.getElementById('addUserForm');
         addUserForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            let
-                data = [], // the form data in type array
-                formdata; // the form data in type FormData
-            formdata = new FormData(this);
-            // console.log(formdata);
-
-            xhr({
-                url: '../api/accessManagement.php',
-                method: 'post',
-                Async: false,
-                data: formdata,
-                success: function(res) {
-                    // console.log(res);
-                    let
-                        icon = 'success', // success | error | warning | info
-                        text = 'دسترسی با موفقیت اضافه شد!'
-                    try {
-                        res = JSON.parse(res);
-                        switch (res.status) {
-                            case 'success':
-                                icon = 'success'
-                                break;
-                            case 'error':
-                                icon = 'error'
-                                break;
-                            case 'info':
-                                icon = 'info'
-                                break;
-                            default:
-                                break;
-                        }
-                    } catch (error) {
-                        console.log(error);
-                        icon = 'error'
-                        text = 'خطا حین انجام عملیات'
-                    }
-                    swal({
-                        text: text,
-                        icon: icon,
-                        button: 'باشه',
-                    })
-                },
-                fail: function(res) {
-                    console.log(res);
-                }
-            });
+            let formdata = new FormData(this);
+            send_ajax_request('accessManagement.php', formdata);
         });
     });
 </script>

@@ -69,8 +69,11 @@
 <!-- xhr Scripts -->
 <script src="<?php echo ROOT ?>/assets/libs/xhr/xhr.js"></script>
 
-<!-- xhr Scripts -->
+<!-- sweetalert Scripts -->
 <script src="<?php echo ROOT ?>/node_modules/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- main Scripts -->
+<script src="<?php echo ROOT ?>/assets/js/main.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="<?php echo ROOT ?>/app/assets/users/js/mycustom.min.js"></script>

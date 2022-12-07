@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html dir="rtl" lang="fa-IR">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

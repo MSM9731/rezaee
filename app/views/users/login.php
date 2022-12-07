@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="fa-IR">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,6 +22,9 @@
 
     <!-- Custom Theme Style -->
     <link href="<?php echo ROOT ?>/app/assets/users/css/custom.css" rel="stylesheet">
+
+    <!-- My Style -->
+    <link href="<?php echo ROOT ?>/app/assets/users/css/style.css" rel="stylesheet">
 </head>
 
 <body class="login">
@@ -36,14 +39,15 @@
                     <form id="loginForm">
                         <h1>فرم ورود</h1>
                         <div>
-                            <input type="text" class="form-control" placeholder="نام کاربری" required="" >
+                            <input value="user" type="text" name="username" class="form-control" placeholder="نام کاربری" required>
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="رمز ورود" required="" >
+                            <input value="pass" type="password" name="password" class="form-control" placeholder="رمز ورود" required>
                         </div>
                         <div>
-                            <a class="btn btn-default submit" href="<?php echo ROOT ?>/users/login">ورود</a>
-                            <a class="reset_pass" href="#reset">رمز ورود را از دست دادید؟</a>
+                            <button type="submit" class="btn btn-default submit">ورود</button>
+                            <br>
+                            <a class="reset_pass m-0" href="#reset" style="width: 100%;">رمز ورود را از دست دادید؟</a>
                         </div>
 
                         <div class="clearfix"></div>
@@ -54,7 +58,7 @@
                             </p>
 
                             <div class="clearfix"></div>
-                            <br >
+                            <br>
 
                             <div>
                                 <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
@@ -69,16 +73,19 @@
                     <form id="registerForm">
                         <h1>ایجاد حساب</h1>
                         <div>
-                            <input type="text" class="form-control" placeholder="نام کاربری" required="" >
+                            <input value="usersname" type="text" name="username" class="form-control" placeholder="نام کاربری" required>
                         </div>
                         <div>
-                            <input type="email" class="form-control" placeholder="ایمیل" required="" >
+                            <input value="email@email.ir" type="email" name="email" class="form-control" placeholder="ایمیل" required>
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="رمز ورود" required="" >
+                            <input value="password" type="password" name="password" class="form-control" placeholder="رمز ورود" required>
                         </div>
                         <div>
-                            <a class="btn btn-default submit" href="<?php echo ROOT ?>/users/login">ارسال</a>
+                            <input value="password" type="password" name="confirm_password" class="form-control" placeholder="تکرار رمز ورود" required>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-default submit">ارسال</button>
                         </div>
 
                         <div class="clearfix"></div>
@@ -89,7 +96,7 @@
                             </p>
 
                             <div class="clearfix"></div>
-                            <br >
+                            <br>
 
                             <div>
                                 <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
@@ -105,7 +112,7 @@
                     <form id="resetPassForm">
                         <h1>بازیابی رمز عبور</h1>
                         <div class="form-group has-feedback">
-                            <input type="email" class="form-control" name="email" placeholder="ایمیل" >
+                            <input type="email" class="form-control" name="email" placeholder="ایمیل">
                             <div class="form-control-feedback">
                                 <i class="fa fa-envelope-o text-muted"></i>
                             </div>
@@ -119,7 +126,7 @@
                             </p>
 
                             <div class="clearfix"></div>
-                            <br >
+                            <br>
 
                             <div>
                                 <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
@@ -132,6 +139,39 @@
             </div>
         </div>
     </div>
+
+
+    <script src="<?php echo ROOT ?>/node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="<?php echo ROOT ?>/assets/libs/xhr/xhr.js"></script>
+    <script src="<?php echo ROOT ?>/assets/js/main.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('loginForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                let formdata = new FormData(this);
+                send_ajax_request('login.php', formdata, function(res) {
+                    // window.location.assign('./dashboard');
+                });
+            });
+            document.getElementById('registerForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                let formdata = new FormData(this);
+                send_ajax_request('register.php', formdata, function(res) {
+                    console.log(res);
+                    window.location.assign('./login#signin');
+                });
+            });
+            document.getElementById('resetPassForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                let formdata = new FormData(this);
+                send_ajax_request('reset_password.php', formdata, false, false, false, function(res) {
+                    text = 'hello'
+                    console.log(res);
+                    // window.location.assign('./dashboard');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -44,9 +44,35 @@ function check_file_exist(string $filename): bool
 }
 
 
+/**
+ * redirect url
+ * 
+ * @param string $to
+ * 
+ * @return void
+ */
 function redirect(string $to): void
 {
     header('location:' . ROOT . $to) . die;
+}
+
+
+/**
+ * send response in api
+ * 
+ * @param string $status
+ * @param string $message
+ * @param array|object $data
+ * 
+ * @return [type]
+ */
+function response(string $status, string $message, array|object $data)
+{
+    die(json_encode([
+        'status' => $status,
+        'message' => $message,
+        'data' => $data
+    ]));
 }
 
 
