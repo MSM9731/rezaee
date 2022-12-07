@@ -17,18 +17,18 @@
                                         <a class="nav-link active" aria-current="page" href="<?php echo ROOT ?>/">خانه</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="<?php echo ROOT ?>/users/login">ورود</a>
+                                        <a class="nav-link" href="<?php echo ROOT ?>/pages/login">ورود</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" href="#">مقالات</a>
-                                    </li>
-                                    <li class="nav-item">
+                                    </li> -->
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">تماس با ما</a>
-                                    </li>
-                                    <li class="nav-item">
+                                    </li> -->
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">درباره</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
+                                    </li> -->
+                                    <!-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             دسته بندی ها
                                         </a>
@@ -40,15 +40,15 @@
                                             </li>
                                             <li><a class="dropdown-item" href="#">ارسالی مخاطبین</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </nav>
                     </div>
                     <div class="col-md-3 col-4 text-start">
                         <div class="top-account">
-                            <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
-                            <a href="#" class="text-dark"><i class="bi bi-gem"></i></a>
+                            <!-- <a href="#" class="text-dark"><i class="bi bi-person"></i></a> -->
+                            <!-- <a href="#" class="text-dark"><i class="bi bi-gem"></i></a> -->
                         </div>
                     </div>
                 </div>

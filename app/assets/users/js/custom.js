@@ -3594,7 +3594,7 @@ function init_echarts() {
             },
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b} : {c}%"
+                formatter: "{a} <br>{b} : {c}%"
             },
             toolbox: {
                 show: true,
@@ -3649,7 +3649,7 @@ function init_echarts() {
 
         echartGauge.setOption({
             tooltip: {
-                formatter: "{a} <br/>{b} : {c}%"
+                formatter: "{a} <br>{b} : {c}%"
             },
             toolbox: {
                 show: true,
@@ -3908,9 +3908,9 @@ function init_echarts() {
                     trigger: 'item',
                     formatter: function (params) {
                         if (params.value.length > 1) {
-                            return params.seriesName + ' :<br/>' + params.value[0] + 'cm ' + params.value[1] + 'kg ';
+                            return params.seriesName + ' :<br>' + params.value[0] + 'cm ' + params.value[1] + 'kg ';
                         } else {
-                            return params.seriesName + ' :<br/>' + params.name + ' : ' + params.value + 'kg ';
+                            return params.seriesName + ' :<br>' + params.name + ' : ' + params.value + 'kg ';
                         }
                     }
                 },
@@ -4198,9 +4198,9 @@ function init_echarts() {
                     trigger: 'item',
                     formatter: function (params) {
                         if (params.value.length > 1) {
-                            return params.seriesName + ' :<br/>' + params.value[0] + 'cm ' + params.value[1] + 'kg ';
+                            return params.seriesName + ' :<br>' + params.value[0] + 'cm ' + params.value[1] + 'kg ';
                         } else {
-                            return params.seriesName + ' :<br/>' + params.name + ' : ' + params.value + 'kg ';
+                            return params.seriesName + ' :<br>' + params.name + ' : ' + params.value + 'kg ';
                         }
                     }
                 },
@@ -4531,7 +4531,7 @@ function init_echarts() {
         echartPieCollapse.setOption({
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                formatter: "{a} <br>{b} : {c} ({d}%)"
             },
             legend: {
                 x: 'center',
@@ -4598,7 +4598,7 @@ function init_echarts() {
         echartDonut.setOption({
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                formatter: "{a} <br>{b} : {c} ({d}%)"
             },
             calculable: true,
             legend: {
@@ -4685,7 +4685,7 @@ function init_echarts() {
         echartPie.setOption({
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                formatter: "{a} <br>{b} : {c} ({d}%)"
             },
             legend: {
                 x: 'center',
@@ -4793,7 +4793,7 @@ function init_echarts() {
             },
             tooltip: {
                 show: true,
-                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                formatter: "{a} <br>{b} : {c} ({d}%)"
             },
             legend: {
                 orient: 'vertical',
@@ -4894,7 +4894,7 @@ function init_echarts() {
                 formatter: function (params) {
                     var value = (params.value + '').split('.');
                     value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,') + '.' + value[1];
-                    return params.seriesName + '<br/>' + params.name + ' : ' + value;
+                    return params.seriesName + '<br>' + params.name + ' : ' + value;
                 }
             },
             toolbox: {

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="fontiran.com:license" content="Y68A9">
-    <link rel="icon" href="<?php echo ROOT ?>/app/assets/users/images/favicon.ico" type="image/ico" />
+    <link rel="icon" href="<?php echo ROOT ?>/app/assets/users/images/favicon.ico" type="image/ico" >
     <title>شبکه خبری ناشناس</title>
 
     <!-- Bootstrap -->

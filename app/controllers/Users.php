@@ -19,7 +19,9 @@ class Users extends Controller
 
     public function login()
     {
-        echo 'login';
+        // echo 'login';
+        // redirect('/pages/login');
+        $this->view('/users/login');
     }
 
     protected function load_view(string $view_name)

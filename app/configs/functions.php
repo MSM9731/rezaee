@@ -31,9 +31,22 @@ function load_once(string ...$filename)
 }
 
 
+/**
+ * check if the given file exist
+ * 
+ * @param string $filename
+ * 
+ * @return bool
+ */
 function check_file_exist(string $filename): bool
 {
     return file_exists(APPPATH . $filename) ? true : false;
+}
+
+
+function redirect(string $to): void
+{
+    header('location:' . ROOT . $to) . die;
 }
 
 

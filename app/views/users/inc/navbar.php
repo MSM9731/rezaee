@@ -35,7 +35,7 @@
                     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" ></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -47,7 +47,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" ></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -59,7 +59,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" ></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>
@@ -71,7 +71,7 @@
                         </li>
                         <li>
                             <a>
-                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="<?php echo ROOT ?>/app/assets/users/images/img.jpg" alt="Profile Image" ></span>
                                 <span>
                                     <span>مرتضی کریمی</span>
                                     <span class="time">3 دقیقه پیش</span>

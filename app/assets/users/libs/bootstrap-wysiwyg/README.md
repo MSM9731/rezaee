@@ -63,9 +63,9 @@ execute more complex commands by adding an argument after a blank or providing a
 ```html
 <a data-edit="fontName Arial">...</a>
 ...
-<input type="text" data-edit="createLink"/>
+<input type="text" data-edit="createLink">
 ...
-<input type="file" data-edit="insertImage" />
+<input type="file" data-edit="insertImage" >
 ```
 
 Use standard jQuery methods to access and set content and focus. You can also ask for cleaned up HTML content:

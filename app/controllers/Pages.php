@@ -19,7 +19,8 @@ class Pages extends Controller
 
     public function login()
     {
-        echo 'login';
+        // $this->load_view('login');
+        redirect('/users/login');
     }
 
     protected function load_view(string $view_name)
