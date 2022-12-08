@@ -146,28 +146,30 @@
     <script src="<?php echo ROOT ?>/assets/js/main.js"></script>
     <script>
         window.addEventListener('load', function() {
+            // loginForm submit handler
             document.getElementById('loginForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 let formdata = new FormData(this);
                 send_ajax_request('login.php', formdata, function(res) {
-                    // window.location.assign('./dashboard');
+                    setTimeout(() => {
+                        window.location.assign('./dashboard');
+                    }, 500);
                 });
             });
+            // registerForm submit handler
             document.getElementById('registerForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 let formdata = new FormData(this);
                 send_ajax_request('register.php', formdata, function(res) {
-                    console.log(res);
                     window.location.assign('./login#signin');
                 });
             });
+            // resetPassForm submit handler
             document.getElementById('resetPassForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 let formdata = new FormData(this);
-                send_ajax_request('reset_password.php', formdata, false, false, false, function(res) {
-                    text = 'hello'
-                    console.log(res);
-                    // window.location.assign('./dashboard');
+                send_ajax_request('reset_password.php', formdata, function(res) {
+                    window.location.assign('./login');
                 });
             });
         });

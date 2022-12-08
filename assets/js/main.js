@@ -18,29 +18,32 @@ function send_ajax_request(file, data, success_callback, error_callback, warning
             // console.log(res);
             let
                 icon = '', // success | error | warning | info
-                text = 'عملیات موفقیت آمیز!'
+                text = '';
             try {
                 res = JSON.parse(res);
                 switch (res.status) {
                     case 'success':
-                        icon = 'success'
+                        icon = 'success';
+                        text = 'عملیات موفقیت آمیز!';
                         if (res.message) text = res.message;
-                        success_callback(res)
+                        success_callback(res);
                         break;
                     case 'error':
                         icon = 'error';
-                        text = 'خطا حین انجام عملیات'
-                        error_callback(res)
+                        text = 'خطا حین انجام عملیات';
+                        error_callback(res);
                         break;
                     case 'warning':
-                        icon = 'warning'
-                        text = 'حین انجام عملیات مشکلی به وجود آمد. لطفا مجددا امتحان کنید'
-                        warning_callback(res)
+                        icon = 'warning';
+                        text = 'حین انجام عملیات مشکلی به وجود آمد. لطفا مجددا امتحان کنید';
+                        if (res.message) text = res.message;
+                        warning_callback(res);
                         break;
                     case 'info':
-                        icon = 'info'
-                        text = 'اطلاعیه'
-                        info_callback(res)
+                        icon = 'info';
+                        text = 'اطلاعیه';
+                        if (res.message) text = res.message;
+                        info_callback(res);
                         break;
                     default:
                         break;
@@ -48,8 +51,8 @@ function send_ajax_request(file, data, success_callback, error_callback, warning
             } catch (error) {
                 console.log(error);
                 console.log(res);
-                icon = 'error'
-                text = 'خطا حین انجام عملیات'
+                icon = 'error';
+                text = 'خطا حین انجام عملیات';
             }
             try {
                 swal({

@@ -11,16 +11,16 @@ class Pages extends Controller
     {
         $this->load_view('home');
     }
-
-    public function accessManagement()
-    {
-        $this->load_view('accessManagement');
-    }
-
+    
     public function login()
     {
         // $this->load_view('login');
         redirect('/users/login');
+    }
+    
+    public function post($data)
+    {
+        $this->load_view('post');
     }
 
     protected function load_view(string $view_name)
